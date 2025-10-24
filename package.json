@@ -1,0 +1,27 @@
+{
+  "name": "autotestgen-pro",
+  "version": "2.0.0",
+  "description": "AutoTestGen demo with GPT-4 integration, repair loop, and export scanner (Windows-safe).",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node src/index.js && nyc --reporter=text-summary node ./node_modules/mocha/bin/mocha.js \"tests/**/*.test.js\""
+  },
+  "keywords": [
+    "testing",
+    "mocha",
+    "coverage",
+    "nyc",
+    "ai",
+    "openai"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "openai": "^4.55.4"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.7.3",
+    "nyc": "^15.1.0"
+  }
+}
